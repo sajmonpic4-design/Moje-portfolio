@@ -1,0 +1,222 @@
+:root {
+    --color-nie: rgba(255, 255, 255, 0.1);
+    --color-white: rgb(255, 255, 255);
+    --color-grey: rgb(92, 92, 92);
+    --color-dark: #333;
+    --color-error: #ffcccc;
+    --color-success: #ccffcc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+}
+
+body {
+    padding: 20px;
+}
+
+header {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid var(--color-white);
+    color: rgb(0, 0, 0);
+    border-radius: 22px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+section, aside {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,240,0.9));
+}
+
+aside {
+    background: rgba(255,255,255,0.8);
+}
+
+form {
+    text-align: center;
+    font-size: 18px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: var(--color-dark);
+    font-size: 1.3rem;
+}
+
+.pola {
+    text-align: left;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid var(--color-white);
+    border-radius: 25px;
+    background: rgba(255,255,255,0.5);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: rgb(8, 0, 255);
+    box-shadow: 0 0 5px rgba(8, 0, 255, 0.3);
+}
+
+input:hover, textarea:hover, select:hover {
+    border-color: rgb(8, 0, 255);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+select {
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: blue;
+}
+
+button {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #45a049, #3d8b40);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.wpisy {
+    background-color: var(--color-success);
+    border: 2px solid green;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease;
+}
+
+.error {
+    background-color: var(--color-error);
+    border: 2px solid red;
+    color: darkred;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease;
+}
+
+.wpisy p, .error p {
+    margin: 8px 0;
+}
+
+.wpisy h2, .error h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-grey);
+    padding-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        width: 95%;
+    }
+    
+    .pola {
+        padding: 10px;
+    }
+    
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    section, aside {
+        min-width: 280px;
+        padding: 15px;
+    }
+    
+    form h2 {
+        font-size: 1.1rem;
+    }
+}
