@@ -1,4 +1,4 @@
-# 📁 My App Market – Portfolio Projects Manager!
+# 📁 My App Market – Portfolio Projects Manager
 
 Aplikacja webowa do zarządzania projektami w portfolio.  
 Umożliwia dodawanie, przechowywanie i wyświetlanie rekordów projektów z wykorzystaniem PHP i MySQL.  
