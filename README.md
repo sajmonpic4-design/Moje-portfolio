@@ -43,3 +43,11 @@ Stworzenie intuicyjnego panelu do zarządzania projektami, który:
 
 <img width="1656" height="789" alt="image" src="https://github.com/user-attachments/assets/fde2ba3c-2372-4e0e-8f37-04ba6254ad8b" />
 <img width="1637" height="854" alt="image" src="https://github.com/user-attachments/assets/f4f030eb-bab5-4447-b3fa-f4744448b4db" />
+
+---
+
+## 🚀 Instalacja i uruchomienie
+
+1_Projekt:
+```bash
+git clone https://github.com/sajmonpic4-design/Moje-portfolio.git
